@@ -16,7 +16,6 @@ services:
   cms:
     image: ghost:latest
     environment:
-      # Memaksa Ghost berjalan di port 80 sesuai spesifikasi
       server__port: 80
       database__client: mysql
       database__connection__host: db
