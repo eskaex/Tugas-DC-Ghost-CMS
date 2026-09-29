@@ -16,6 +16,7 @@ services:
   cms:
     image: ghost:latest
     environment:
+      url: http://${PUBLIC_IP}
       server__port: 80
       database__client: mysql
       database__connection__host: db
