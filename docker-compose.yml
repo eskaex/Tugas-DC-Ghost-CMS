@@ -16,6 +16,8 @@ services:
     restart: unless-stopped
     environment:
       url: http://${PUBLIC_IP}
+      security__staffDeviceVerification: "false"
+      mail__from: "'Ghost Blog' <noreply@gmail.com>"
       database__client: mysql
       database__connection__host: db
       database__connection__user: ${DB_USER}
